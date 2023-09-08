@@ -8,21 +8,27 @@ const app = Vue.createApp({
 	},
 	computed: {
 		totalVotes() {
-			console.log("computed property performed");
 			return this.places.reduce((totalVotes, place) => {
 				return totalVotes + place.votes;
 			}, 0);
 		},
+		sortedPlaces() {
+			return this.places.slice().sort((a, b) => {
+				return b.votes - a.votes;
+			});
+		},
 	},
 	methods: {
-		upvote(infoText, event) {
-			this.places[0].votes++;
-			console.log(infoText);
-			console.log(event);
+		upvote(placesId) {
+			// find the place with the given id
+			const place = this.places.find((place) => place.id === placesId);
+			place.votes++;
+			// this.places[0].votes++;
 		},
-		downvote() {
-			this.places[0].votes--;
-		},
+	},
+	created() {
+		// Sort the places by votes when the component is created
+		this.places = this.sortedPlaces;
 	},
 });
 

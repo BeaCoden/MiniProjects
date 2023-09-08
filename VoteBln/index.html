@@ -24,29 +24,31 @@
               <h2 class="card-title">Vote here!</h2>
             </div>
             <div class="card-body">
-              <div class="d-flex">
-                <div class="d-shrink-0">
-                  <img v-bind:src="places[0].img" title="Location Picture" alt="Location Picture"
-                    v-bind:style="{width: '100px', height: '100px', border: '5px solid darkgrey'}">
+              <template v-for="place in sortedPlaces" v-bind:key="place.id">
+                <div class="d-flex">
+                  <div class="d-shrink-0">
+                    <img v-bind:src="place.img" title="Location Picture" alt="Location Picture"
+                      v-bind:style="{width: '100px', height: '100px', border: '5px solid darkgrey'}">
+                  </div>
+                  <div class="flex-grow-1 ms-3">
+                    <!-- v-once prevents changing title but changes data entry in places / {{ entry }} from dataItems.js - first entry -->
+                    <!-- <h5 v-once> {{ places[0].title }} -->
+                    <h5> {{ place.title }}
+                      <span class="float-end text-primary point">
+                        <!-- v-on:click = @click -->
+                        <i class="fa fa-chevron-up pe-1" @click="upvote(place.id)"></i>
+                        <strong> {{ place.votes }} </strong>
+                      </span>
+                    </h5>
+                    <!--  v-html only use trusted content & never on user-provided content  -->
+                    <div v-html="place.desc"></div>
+                    <!-- v-pre prevents from rendering as html -->
+                    <!-- <div v-pre>{{places[0].desc}}</div> -->
+                    <small class="text-muted">{{ place.location}}</small>
+                  </div>
                 </div>
-                <div class="flex-grow-1 ms-3">
-                  <!-- v-once prevents changing title but changes data entry in places / {{ entry }} from dataItems.js - first entry -->
-                  <!-- <h5 v-once> {{ places[0].title }} -->
-                  <h5> {{ places[0].title }}
-                    <span class="float-end text-primary point">
-                      <!-- v-on:click = @click -->
-                      <i class="fa fa-chevron-up pe-1" @click="upvote('Voting successful', $event)"></i>
-                      <i class="fa fa-chevron-down pe-3" @click="downvote"></i>
-                      <strong> {{ places[0].votes }} </strong>
-                    </span>
-                  </h5>
-                  <!--  v-html only use trusted content & never on user-provided content  -->
-                  <div v-html="places[0].desc"></div>
-                  <!-- v-pre prevents from rendering as html -->
-                  <!-- <div v-pre>{{places[0].desc}}</div> -->
-                  <small class="text-muted">{{ places[0].location}}</small>
-                </div>
-              </div>
+                <hr />
+              </template>
             </div>
             <div class="card-footer">
               <small class="float-end text-bg-primary" :style="{ padding: '5px', borderRadius: '10px' }">
