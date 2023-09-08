@@ -8,13 +8,11 @@ const app = Vue.createApp({
 	},
 	computed: {
 		totalVotes() {
-			console.log("totalVotes performed");
 			return this.places.reduce((totalVotes, place) => {
 				return totalVotes + place.votes;
 			}, 0);
 		},
 		sortedPlaces() {
-			console.log("sortedPlaces performed");
 			return this.places.slice().sort((a, b) => {
 				return b.votes - a.votes;
 			});
