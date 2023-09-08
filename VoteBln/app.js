@@ -21,13 +21,11 @@ const app = Vue.createApp({
 		},
 	},
 	methods: {
-		upvote(infoText, event) {
-			this.places[0].votes++;
-			console.log(infoText);
-			console.log(event);
-		},
-		downvote() {
-			this.places[0].votes--;
+		upvote(placesId) {
+			// find the place with the given id
+			const place = this.places.find((place) => place.id === placesId);
+			place.votes++;
+			// this.places[0].votes++;
 		},
 	},
 	created() {

@@ -4,7 +4,7 @@ const places = [
 		title: "BER",
 		desc: "Unlicensed taxi drivers approach passengers at the airport and provide rides which harms licensed colleagues who face longer wait times.",
 		location: "Airport Berlin Brandenburg Willy Brandt - Berlin Schönefeld",
-		votes: 1,
+		votes: 0,
 		img: "pic1.png",
 	},
 	{
@@ -12,7 +12,7 @@ const places = [
 		title: "HBF",
 		desc: "Taxi drivers face issues due to the lack of a queue management system at the taxi rank.",
 		location: "Central Station - Berlin Mitte",
-		votes: 3,
+		votes: 0,
 		img: "pic2.png",
 	},
 	{
@@ -20,7 +20,7 @@ const places = [
 		title: "KaDeWe",
 		desc: "The loading zone for taxi drivers is inadequate in size at that location.",
 		location: "Kaufhaus des Westens - Berlin Schöneberg",
-		votes: 6,
+		votes: 0,
 		img: "pic3.png",
 	},
 	{
@@ -28,7 +28,7 @@ const places = [
 		title: "Alex",
 		desc: "At this location, it's not always worthwhile to wait for passengers.",
 		location: "Alexanderplatz - Berlin Mitte",
-		votes: 9,
+		votes: 0,
 		img: "pic4.png",
 	},
 ];
