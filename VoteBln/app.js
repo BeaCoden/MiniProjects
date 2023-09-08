@@ -8,10 +8,16 @@ const app = Vue.createApp({
 	},
 	computed: {
 		totalVotes() {
-			console.log("computed property performed");
+			console.log("totalVotes performed");
 			return this.places.reduce((totalVotes, place) => {
 				return totalVotes + place.votes;
 			}, 0);
+		},
+		sortedPlaces() {
+			console.log("sortedPlaces performed");
+			return this.places.slice().sort((a, b) => {
+				return b.votes - a.votes;
+			});
 		},
 	},
 	methods: {
@@ -23,6 +29,10 @@ const app = Vue.createApp({
 		downvote() {
 			this.places[0].votes--;
 		},
+	},
+	created() {
+		// Sort the places by votes when the component is created
+		this.places = this.sortedPlaces;
 	},
 });
 
