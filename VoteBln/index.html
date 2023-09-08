@@ -20,9 +20,12 @@
       <div class="row">
         <div class="col-xl-4 offset-xl-4">
           <div class="card mt-5">
+
+            <!-- SECTION - Header -->
             <div class="card-header">
               <h2 class="card-title">Vote here!</h2>
             </div>
+            <!-- SECTION -Body -->
             <div class="card-body">
               <template v-for="place in sortedPlaces" v-bind:key="place.id">
                 <div class="d-flex">
@@ -50,6 +53,7 @@
                 <hr />
               </template>
             </div>
+            <!-- SECTION - Footer -->
             <div class="card-footer">
               <small class="float-end text-bg-primary" :style="{ padding: '5px', borderRadius: '10px' }">
                 {{ totalVotes }} votes</small>
