@@ -23,6 +23,11 @@ const app = Vue.createApp({
 				"text-white": this.totalVotes >= 1,
 			};
 		},
+		// fontSize() {
+		// 	return {
+		// 		"fs-6": this.totalVotes >= 0,
+		// 	};
+		// },
 	},
 	methods: {
 		upvote(placesId) {
