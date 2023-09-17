@@ -19,9 +19,8 @@ const app = Vue.createApp({
 		},
 		cardHeaderBgColor() {
 			return {
-				"bg-primary": this.totalVotes >= 100,
-				"text-white": this.totalVotes >= 100,
-				"rounded-3": this.totalVotes >= 100,
+				"bg-primary": this.totalVotes >= 1,
+				"text-white": this.totalVotes >= 1,
 			};
 		},
 	},
