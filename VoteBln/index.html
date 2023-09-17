@@ -23,7 +23,9 @@
 
             <!-- SECTION - Header -->
             <div class="card-header">
-              <h2 class="card-title">Vote here!</h2>
+              <h2 class="card-title">Vote here!<small class="float-end"
+                  v-bind:class="'bg-primary', 'text-white', 'rounded-3', 'font'">
+                  {{ totalVotes }} votes</small></h2>
             </div>
             <!-- SECTION -Body -->
             <div class="card-body">
@@ -74,8 +76,7 @@
             </div>
             <!-- SECTION - Footer -->
             <div class="card-footer">
-              <small class="float-end text-bg-primary" :style="{ padding: '5px', borderRadius: '10px' }">
-                {{ totalVotes }} votes</small>
+
             </div>
           </div>
         </div>

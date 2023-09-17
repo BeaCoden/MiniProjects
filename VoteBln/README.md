@@ -1,5 +1,9 @@
 # Vote Web App with vue.js
 
+## Status
+
+:ongoing:
+
 ## Features
 
 - [ ] Bootstrap css

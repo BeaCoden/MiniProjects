@@ -17,6 +17,13 @@ const app = Vue.createApp({
 				return b.votes - a.votes;
 			});
 		},
+		cardHeaderBgColor() {
+			return {
+				"bg-primary": this.totalVotes >= 100,
+				"text-white": this.totalVotes >= 100,
+				"rounded-3": this.totalVotes >= 100,
+			};
+		},
 	},
 	methods: {
 		upvote(placesId) {
