@@ -17,6 +17,17 @@ const app = Vue.createApp({
 				return b.votes - a.votes;
 			});
 		},
+		cardHeaderBgColor() {
+			return {
+				"bg-primary": this.totalVotes >= 1,
+				"text-white": this.totalVotes >= 1,
+			};
+		},
+		// fontSize() {
+		// 	return {
+		// 		"fs-6": this.totalVotes >= 0,
+		// 	};
+		// },
 	},
 	methods: {
 		upvote(placesId) {

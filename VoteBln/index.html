@@ -22,10 +22,14 @@
           <div class="card mt-5">
 
             <!-- SECTION - Header -->
-            <div class="card-header">
-              <h2 class="card-title">Vote here!</h2>
+            <div class="card-header" v-bind:class="cardHeaderBgColor">
+              <h2 class="card-title">Vote here!
+                <!-- <span class="float-end" v-bind:class="fontSize"> -->
+                <span class="float-end" v-bind:class="fontSize">
+                  {{ totalVotes }} votes</span>
+              </h2>
             </div>
-            <!-- SECTION -Body -->
+            <!-- SECTION - Body -->
             <div class="card-body">
               <template v-for="place in sortedPlaces" v-bind:key="place.id">
                 <div class="d-flex">
@@ -74,8 +78,7 @@
             </div>
             <!-- SECTION - Footer -->
             <div class="card-footer">
-              <small class="float-end text-bg-primary" :style="{ padding: '5px', borderRadius: '10px' }">
-                {{ totalVotes }} votes</small>
+
             </div>
           </div>
         </div>
