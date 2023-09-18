@@ -1,4 +1,4 @@
-# Vue.js Web App for taxi driver billing
+# Web App for taxi driver billing
 
 ## Status
 
@@ -6,9 +6,9 @@
 
 ## Features
 
-- [ ] Bootstrap css
-- [ ] Fontawesome icon
-- [ ] Vue.js
+- [ ]
+- [ ]
+- [ ]
 
 ## Description
 
