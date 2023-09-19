@@ -82,9 +82,9 @@
 	</nav>
 
 	<!-- SECTION - Footer -->
-	<footer class="footer mt-auto py-3 bg-light fixed-bottom">
+	<!-- <footer class="footer mt-auto py-3 bg-light fixed-bottom">
 		<div class="container">
 			<small class="text-muted"> <a href="#impress">impress</a></small>
 		</div>
-	</footer>
+	</footer> -->
 </template>
