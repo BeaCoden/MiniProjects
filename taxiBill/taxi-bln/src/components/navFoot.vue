@@ -1,6 +1,4 @@
-<script setup>
-	let monthIncome = 0.0;
-</script>
+<script setup></script>
 
 <template>
 	<!-- SECTION - Heading -->
@@ -82,8 +80,6 @@
 			</div>
 		</div>
 	</nav>
-
-	<!-- SECTION - Main -->
 
 	<!-- SECTION - Footer -->
 	<footer class="footer mt-auto py-3 bg-light fixed-bottom">

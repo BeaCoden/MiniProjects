@@ -1,9 +1,15 @@
 <script setup>
-	import HelloWorld from "./components/HelloWorld.vue";
+	import navFoot from "./components/navFoot.vue";
+	import moneyIncome from "./components/moneyIncome.vue";
+	import moneySpend from "./components/moneySpend.vue";
+	import entireResult from "./components/entireResult.vue";
 </script>
 
 <template>
-	<HelloWorld />
+	<navFoot />
+	<moneyIncome />
+	<moneySpend />
+	<entireResult />
 </template>
 
 <style scoped>
