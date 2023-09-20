@@ -1,7 +1,7 @@
 <script setup></script>
 
 <template>
-	<!-- SECTION - Heading -->
+	<!-- SECTION - nav -->
 	<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-lg-top">
 		<div class="container-fluid">
 			<button
