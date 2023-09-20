@@ -1,7 +1,7 @@
 <script setup>
-	import { defineProps } from "vue";
+	import { useRouter } from "vue-router";
 
-	const { showSection } = defineProps(["showSection"]);
+	const router = useRouter();
 </script>
 
 <template>
@@ -12,7 +12,7 @@
 				<div class="card-body">
 					<h2 class="card-title">Einnahmen</h2>
 					<p class="card-text">lorem ipsum dolor sit amet</p>
-					<button @click="showSection('moneyIncome')">weiter</button>
+					<button @click="router.push('/moneyCosts')">weiter</button>
 				</div>
 			</div>
 
@@ -23,7 +23,7 @@
 				<div class="card-body">
 					<h2 class="card-title">Ausgaben</h2>
 					<p class="card-text">lorem ipsum dolor sit amet</p>
-					<button @click="showSection('moneySpend')">weiter</button>
+					<button @click="router.push('/moneyCosts')">weiter</button>
 				</div>
 			</div>
 
@@ -34,7 +34,7 @@
 				<div class="card-body">
 					<h2 class="card-title">sonstige Belege</h2>
 					<p class="card-text">lorem ipsum dolor sit amet</p>
-					<button @click="showSection('otherReceipts')">weiter</button>
+					<button @click="router.push('/moneyCosts')">weiter</button>
 				</div>
 			</div>
 		</div>

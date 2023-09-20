@@ -12,5 +12,5 @@ This is a web app for taxi drivers to calculate their billing.
 
 - Vue.js
 - Vite
-- Pinia
+- Firebase
 - Bootstrap
