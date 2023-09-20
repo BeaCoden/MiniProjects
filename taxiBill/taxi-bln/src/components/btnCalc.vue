@@ -8,12 +8,15 @@
 			<div class="mt-4">
 				<h3>Ergebnisse der einzelnen Kosten:</h3>
 				<p>Total Einnahmen:</p>
-				<button @click="router.push('/moneyCosts')">zurück</button>
+
 				<p>Total Ausgaben:</p>
-				<button @click="router.push('/moneyCosts')">zurück</button>
+
 				<p>Total Sonstige:</p>
-				<button @click="router.push('/moneyCosts')">zurück</button>
+
 				<p>Gesamtbetrag:</p>
+			</div>
+			<div class="container mt-5">
+				<button @click="router.push('/moneyCosts')">zurück</button>
 			</div>
 		</div>
 	</div>

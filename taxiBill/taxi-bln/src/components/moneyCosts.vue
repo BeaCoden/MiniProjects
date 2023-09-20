@@ -1,4 +1,7 @@
-<script setup></script>
+<script setup>
+	import { useRouter } from "vue-router";
+	const router = useRouter();
+</script>
 <template>
 	<!-- //SECTION - Einnahmen -->
 	<div class="container mt-5">
@@ -102,6 +105,7 @@
 
 				<div class="container mt-5">
 					<button @click="router.push('/btnCalc')">berechnen</button>
+					<button @click="router.push('/landingPage')">zurück</button>
 				</div>
 			</div>
 		</div>
