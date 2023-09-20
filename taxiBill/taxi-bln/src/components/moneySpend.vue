@@ -3,7 +3,6 @@
 	<div class="container mt-5">
 		<div id="app">
 			<div class="mb-4">
-				<h2>Ausgaben</h2>
 				<div class="form-group">
 					<label>Tanken:</label
 					><input

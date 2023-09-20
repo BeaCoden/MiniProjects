@@ -15,7 +15,9 @@
 			>
 				<span class="navbar-toggler-icon"></span>
 			</button>
-			<p class="navbar-brand fw-bold fs-6 text-uppercase pt-4">Taxi Billing</p>
+			<h1 class="navbar-brand fw-bold fs-6 text-uppercase pt-4">
+				Taxi Billing
+			</h1>
 			<img
 				class="float-end"
 				width="65"
@@ -40,8 +42,24 @@
 						<a
 							class="nav-link"
 							aria-current="page"
-							href="#summary"
-							>Summary</a
+							href="#overview"
+							>Übersicht</a
+						>
+					</li>
+					<li class="nav-item">
+						<a
+							class="nav-link"
+							aria-current="page"
+							href="#moneyIncome"
+							>Einnahmen</a
+						>
+					</li>
+					<li class="nav-item">
+						<a
+							class="nav-link"
+							aria-current="page"
+							href="#moneySpend"
+							>Ausgaben</a
 						>
 					</li>
 					<li class="nav-item">
@@ -57,23 +75,7 @@
 							class="nav-link"
 							aria-current="page"
 							href="#settings"
-							>Settings</a
-						>
-					</li>
-					<li class="nav-item">
-						<a
-							class="nav-link"
-							aria-current="page"
-							href="#logout"
-							>Login</a
-						>
-					</li>
-					<li class="nav-item">
-						<a
-							class="nav-link"
-							aria-current="page"
-							href="#logout"
-							>Logout</a
+							>Einstellungen</a
 						>
 					</li>
 				</ul>
@@ -82,9 +84,9 @@
 	</nav>
 
 	<!-- SECTION - Footer -->
-	<!-- <footer class="footer mt-auto py-3 bg-light fixed-bottom">
+	<footer class="footer mt-auto py-3 bg-light fixed-bottom">
 		<div class="container">
 			<small class="text-muted"> <a href="#impress">impress</a></small>
 		</div>
-	</footer> -->
+	</footer>
 </template>

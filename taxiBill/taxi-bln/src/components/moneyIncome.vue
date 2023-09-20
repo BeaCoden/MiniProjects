@@ -3,15 +3,14 @@
 	<div class="container mt-5">
 		<div id="app">
 			<div class="mb-4">
-				<h2>Einnahmen</h2>
 				<div class="form-group">
-					<label>UBER:</label
+					<label>Uber:</label
 					><input
 						class="form-control"
 						v-model="uber"
 						type="number"
 					/>
-					<label>BOLT:</label
+					<label>Bolt:</label
 					><input
 						class="form-control"
 						v-model="bolt"
@@ -41,7 +40,7 @@
 						v-model="coupons"
 						type="number"
 					/>
-					<label>7. Fernfahrten:</label
+					<label>Fernfahrten:</label
 					><input
 						class="form-control"
 						v-model="fernfahrten"
