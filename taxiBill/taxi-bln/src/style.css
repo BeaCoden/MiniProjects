@@ -5,16 +5,26 @@
   text-align: left;
 }
 
-/* .card {
-  background-image: url(src/assets/car.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 100%;
-  width: 100%;
-  height: 100%;
-  border-radius: 0.5rem;
-  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.2);
-  overflow: hidden;
-  position: relative;
+/* SECTION - LOGIN */
+.login {
+  background-color: rgba(211, 211, 211, 0.247);
+  margin-bottom: 30px;
+}
 
-} */
+.text-warning {
+  color: #ffe501 !important;
+}
+
+/* SECTION - Media Queries */
+@media (min-width: 768px) {
+  .gradient-form {
+    height: 100vh !important;
+  }
+}
+
+@media (min-width: 769px) {
+  .gradient-custom-2 {
+    border-top-right-radius: .3rem;
+    border-bottom-right-radius: .3rem;
+  }
+}

@@ -18,16 +18,7 @@
 			>
 				<span class="navbar-toggler-icon"></span>
 			</button>
-			<h1 class="navbar-brand fw-bold fs-6 text-uppercase pt-4">
-				Taxi Billing
-			</h1>
-			<img
-				class="float-end"
-				width="65"
-				height="65"
-				src="src/assets/Taxi.png"
-				alt="picture of cartoon taxi driver"
-			/>
+
 			<div
 				class="collapse navbar-collapse"
 				id="navbarTogglerDemo03"
