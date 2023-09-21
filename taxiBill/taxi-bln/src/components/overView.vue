@@ -27,6 +27,9 @@
 					</tbody>
 				</table>
 			</div>
+			<div class="container mt-5">
+				<button @click="router.push('/cardMoney')">zurück</button>
+			</div>
 		</div>
 	</div>
 </template>

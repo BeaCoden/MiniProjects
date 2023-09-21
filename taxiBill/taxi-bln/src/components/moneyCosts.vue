@@ -105,7 +105,7 @@
 
 				<div class="container mt-5">
 					<button @click="router.push('/btnCalc')">berechnen</button>
-					<button @click="router.push('/landingPage')">zurück</button>
+					<button @click="router.push('/cardMoney')">zurück</button>
 				</div>
 			</div>
 		</div>
