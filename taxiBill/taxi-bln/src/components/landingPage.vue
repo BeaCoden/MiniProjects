@@ -1,8 +1,8 @@
 <script setup></script>
 <template>
 	<section
-		class="h-100 gradient-form"
-		style="background-color: #eee"
+		class="h-100"
+		style="background-color: #75d6ee"
 	>
 		<div class="container py-3 h-100">
 			<div class="row d-flex justify-content-center align-items-center h-100">
@@ -40,7 +40,7 @@
 											/>
 										</div>
 										<div
-											class="d-flex align-items-center justify-content-left pb-4"
+											class="d-flex align-items-center justify-content-between pb-4"
 										>
 											<button
 												type="button"
@@ -48,16 +48,9 @@
 											>
 												Anmelden
 											</button>
-										</div>
-										<div
-											class="d-flex align-items-center justify-content-center pb-4"
-										>
-											<p class="mb-0 me-2 text-muted">
-												<small>Neu hier ?</small>
-											</p>
 											<button
 												type="button"
-												class="btn btn-outline-secondary btn-sm"
+												class="btn btn-outline-secondary"
 											>
 												Registrieren
 											</button>

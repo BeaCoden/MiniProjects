@@ -72,15 +72,38 @@
 							>Einstellungen</a
 						>
 					</li>
+					<li class="nav-item">
+						<a
+							class="nav-link"
+							aria-current="page"
+							href="#contact"
+							>Kontakt</a
+						>
+					</li>
 				</ul>
 			</div>
 		</div>
 	</nav>
 
 	<!-- SECTION - Footer -->
-	<footer class="footer mt-auto py-3 bg-light fixed-bottom">
-		<div class="container">
-			<small class="text-muted"> <a href="#impress">impress</a></small>
+	<footer class="footer mt-auto py-1 bg-light fixed-bottom">
+		<div class="d-flex float-start">
+			<a
+				href="#impress"
+				class="text-muted text-decoration-none bg-light px-3 py-1"
+				style="font-size: 12px"
+			>
+				Impressum</a
+			>
+		</div>
+		<div class="d-flex float-end">
+			<a
+				href="#copyright"
+				class="text-muted text-decoration-none bg-light px-3 py-1"
+				style="font-size: 12px"
+			>
+				&copy; BP 2023</a
+			>
 		</div>
 	</footer>
 </template>
