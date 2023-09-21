@@ -1,4 +1,7 @@
-<script setup></script>
+<script setup>
+	import { useRouter } from "vue-router";
+	const router = useRouter();
+</script>
 <template>
 	<div class="container mt-5">
 		<div class="overview">
