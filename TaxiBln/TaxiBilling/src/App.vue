@@ -17,5 +17,7 @@
   color: var(--font-color);
   background-color: var(--color-bodyLight);
   font-family: "Montserrat", sans-serif;
+  width: 100vw;
+  height: 100vh;
 }
 </style>
