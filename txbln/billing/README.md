@@ -1,4 +1,7 @@
-# billing# Web App for taxi driver billing
+# Taxi Billing
+![taxiBillIMG](https://github.com/BeaCoden/MiniProjects/assets/130828327/8e3de119-6a65-4992-bf4d-f0304c20d153)
+
+## Web App for taxi driver billing
 
 ## Status
 
