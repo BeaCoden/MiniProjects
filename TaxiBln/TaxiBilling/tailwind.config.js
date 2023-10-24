@@ -24,6 +24,6 @@ module.exports = {
         primary: "2px 2px 4px rgba(0, 0, 0, 0.3)",
       },
     },
-    plugins: [require("tailwindcss-textshadow")],
+    plugins: [],
   },
 };
