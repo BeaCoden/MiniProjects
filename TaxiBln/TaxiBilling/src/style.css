@@ -1,0 +1,80 @@
+/* SECTION - Imports */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* SECTION - roots */
+:root {
+
+  /* secondary */
+  --color-secondary: #ffe501;
+  /* primary */
+  --color-primary: #75d6ee;
+  /* buttonHover */
+  /* focus:outline-none focus:ring-2 focus:ring-opacity-50 */
+  /* hover:bg-buttonHover */
+  --color-buttonHover: rgb(117, 214, 238, 0.6);
+  /* bodyColor */
+  --color-body: rgb(131, 80, 111);
+  /* bodyTransparent */
+  --color-bodyTransparent: rgba(212, 178, 199, 0.6);
+  /* bodyLight */
+  --color-bodyLight: rgb(207, 190, 200, 0.5);
+
+  /* fontColor */
+  --font-color: rgb(131, 80, 111);
+}
+
+/* SECTION - Global Styles */
+#app {
+  max-width: 1024px;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  background-color: var(--color-body);
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(100vh);
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(-20vh);
+    -moz-transform: translateY(-20vh);
+    -ms-transform: translateY(-20vh);
+    -o-transform: translateY(-20vh);
+    transform: translateY(-20vh);
+  }
+}
+
+.animate-slideUp {
+  -webkit-animation: slideUp 2s forwards;
+  animation: slideUp 2s forwards;
+}
+
+@keyframes slideInFromTopRight {
+  from {
+    transform: translateY(-100%) translateX(100%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0) translateX(0);
+    opacity: 1;
+  }
+}
+
+.animate-slideInFromTopRight {
+  -webkit-animation: slideInFromTopRight 0.8s ease forwards;
+  animation: slideInFromTopRight 0.8s ease forwards;
+}
+
+/* SECTION - Media Queries */
+/* @media (prefers-reduced-motion) {
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+}  */
