@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./index.html", "./src/**/*.vue", "./src/**/*.js"],
+  content: ["./index.html", "./src/**/*.{vue,js,ts,jsx,tsx}"],
   theme: {
     extend: {
       colors: {
@@ -24,10 +24,6 @@ module.exports = {
         primary: "2px 2px 4px rgba(0, 0, 0, 0.3)",
       },
     },
+    plugins: [require("tailwindcss-textshadow")],
   },
-  plugins: [
-    require("tailwindcss-textshadow"),
-    require("@tailwindcss/forms"),
-    require("@tailwindcss/typography"),
-  ],
 };
