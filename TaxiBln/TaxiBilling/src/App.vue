@@ -2,6 +2,7 @@
   <nav>
     <router-view />
   </nav>
+  <h2>hello</h2>
 </template>
 
 <style>
@@ -13,7 +14,8 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: var(--text-color);
+  color: var(--font-color);
+  background-color: var(--color-bodyLight);
   font-family: "Montserrat", sans-serif;
 }
 </style>

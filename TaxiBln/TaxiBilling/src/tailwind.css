@@ -14,15 +14,16 @@
   /* focus:outline-none focus:ring-2 focus:ring-opacity-50 */
   /* hover:bg-buttonHover */
   --color-buttonHover: rgb(117, 214, 238, 0.6);
-  /* bodyColor */
-  --color-body: rgb(131, 80, 111);
+  /* colorNav */
+  --color-nav: rgb(131, 80, 111);
   /* bodyTransparent */
   --color-bodyTransparent: rgba(212, 178, 199, 0.6);
   /* bodyLight */
-  --color-bodyLight: rgb(207, 190, 200, 0.5);
-
+  --color-bodyLight: rgb(196, 166, 184);
   /* fontColor */
   --font-color: rgb(131, 80, 111);
+  /* fontColorNav */
+  --font-color-nav: rgb(255, 255, 255);
 }
 
 /* SECTION - Global Styles */
@@ -30,7 +31,6 @@
   max-width: 1024px;
   scroll-behavior: smooth;
   box-sizing: border-box;
-  background-color: var(--color-body);
 }
 
 @keyframes slideUp {
