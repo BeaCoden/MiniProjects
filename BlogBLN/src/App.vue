@@ -1,15 +1,17 @@
 <template>
   <div class="app-wrapper">
     <div class="app">
+      <headerNav />
       <router-view />
     </div>
   </div>
 </template>
 
 <script>
+import headerNav from "./components/headerNav.vue";
 export default {
   name: "app",
-  components: {},
+  components: { headerNav },
   data() {
     return {};
   },
@@ -25,26 +27,13 @@ export default {
   font-family: "Montserrat", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #89c2fa;
+  min-height: 100vh;
 }
 
 body {
   margin: 0;
   padding: 0;
   background-image: url(./assets/background.png);
-}
-
-nav {
-  padding: 30px;
-}
-
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-nav a.router-link-exact-active {
-  color: #42b983;
 }
 </style>

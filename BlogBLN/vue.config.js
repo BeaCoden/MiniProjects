@@ -8,10 +8,10 @@ module.exports = defineConfig({
     svgRule.uses.clear();
 
     svgRule
-      .use("babel-loader")
-      .loader("babel-loader")
+      .use("vue-loader")
+      .loader("vue-loader")
       .end()
-      .use("vue-svg-loader")
-      .loader("vue-svg-loader");
+      .use("vue-svg-loader-2")
+      .loader("vue-svg-loader-2");
   },
 });
