@@ -13,7 +13,6 @@
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: var(--font-color);
   background-color: var(--color-bodyLight);
   font-family: "Montserrat", sans-serif;
