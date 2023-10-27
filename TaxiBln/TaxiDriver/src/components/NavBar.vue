@@ -33,9 +33,12 @@
           {{ link.name }}
         </router-link>
       </li>
-      <BtnLogIn />
-      <BtnLogOut />
-      <!-- <BtnReg /> -->
+
+      <div class="flex flex-col">
+        <BtnLogIn />
+        <BtnLogOut />
+        <!-- <BtnReg /> -->
+      </div>
     </ul>
     <ul
       v-show="menuOpen"
