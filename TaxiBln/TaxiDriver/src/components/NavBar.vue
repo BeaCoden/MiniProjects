@@ -34,6 +34,7 @@
         </router-link>
       </li>
       <BtnLogIn />
+      <BtnLogOut />
       <!-- <BtnReg /> -->
     </ul>
     <ul
@@ -45,12 +46,14 @@
 
 <script>
 import BtnLogIn from "./BtnLogIn.vue";
+import BtnLogOut from "./BtnLogOut.vue";
 import { ref, watch } from "vue";
 
 export default {
   name: "NavBar",
   components: {
     BtnLogIn,
+    BtnLogOut,
   },
   props: {},
   setup() {
