@@ -39,6 +39,7 @@
         <BtnLogOut />
         <!-- <BtnReg /> -->
       </div>
+      <FooterBar />
     </ul>
     <ul
       v-show="menuOpen"
@@ -50,6 +51,7 @@
 <script>
 import BtnLogIn from "./BtnLogIn.vue";
 import BtnLogOut from "./BtnLogOut.vue";
+import FooterBar from "./FooterBar.vue";
 import { ref, watch } from "vue";
 
 export default {
@@ -57,6 +59,7 @@ export default {
   components: {
     BtnLogIn,
     BtnLogOut,
+    FooterBar,
   },
   props: {},
   setup() {
