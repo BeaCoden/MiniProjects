@@ -5,9 +5,7 @@
     <div class="text-center text-xs">
       <p>
         Copyright © 2023 -
-        <a class="font-semibold" href="mailto:bea.pitzschke.coden@gmail.com"
-          >BeaPitzschke</a
-        >
+        <a class="" href="mailto:bea.pitzschke.coden@gmail.com">BeaPitzschke</a>
       </p>
     </div>
   </footer>
