@@ -1,11 +1,10 @@
 /* SECTION - Imports */
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 
 /* SECTION - roots */
 :root {
-
   /* secondary */
   --color-secondary: #ffe501;
   /* primary */
@@ -32,7 +31,6 @@
   scroll-behavior: smooth;
   box-sizing: border-box;
 }
-
 
 /* SECTION - Media Queries */
 /* @media (prefers-reduced-motion) {
