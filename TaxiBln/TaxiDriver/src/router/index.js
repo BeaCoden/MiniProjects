@@ -1,11 +1,17 @@
 import { createRouter, createWebHistory } from "vue-router";
 import LandingView from "../views/LandingView.vue";
+import DashboardView from "../views/DashboardView.vue";
 
 const routes = [
   {
     path: "/",
     name: "home",
     component: LandingView,
+  },
+  {
+    path: "/",
+    name: "dashboard",
+    component: DashboardView,
   },
   //{
   // path: "/about",

@@ -66,8 +66,8 @@ export default {
     let menuOpen = ref(false);
     let menuClosing = ref(false);
     let links = [
-      { name: "Home", path: "/" },
-      { name: "Dashboard", path: "/dashboard" },
+      { name: "Dashboard", path: "/" },
+      { name: "Settings", path: "/settings" },
     ];
 
     function toggleMenu() {
