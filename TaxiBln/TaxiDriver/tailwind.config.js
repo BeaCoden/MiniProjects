@@ -9,7 +9,7 @@ module.exports = {
         primary: "rgb(117, 214, 238)", // #1D929D
         buttonHover: "rgb(117, 214, 238, 0.6)", // #1D929D
         colorNav: "rgb(131, 80, 111)", // #83506F
-        bodyTransparent: "rgb(212, 178, 199, 0.6)", // #83506f80
+        bodyTransparent: "rgba(212, 178, 199, 0.8)", // #d4b2c7cc
         bodyLight: "rgb(196, 166, 184)", // #cfbec8
         fontColor: "rgb(131, 80, 111)", // #83506F
         fontColorNav: "rgb(255, 255, 255)", // #FFFFFF
