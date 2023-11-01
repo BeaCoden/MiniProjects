@@ -19,6 +19,8 @@
   --color-bodyTransparent: rgba(212, 178, 199, 0.8);
   /* bodyLight */
   --color-bodyLight: rgb(196, 166, 184);
+  /* bodyGlass */
+  --color-bodyGlass: rgba(130, 79, 110, 0.53);
   /* fontColor */
   --font-color: rgb(131, 80, 111);
   /* fontColorNav */
@@ -32,10 +34,36 @@
   box-sizing: border-box;
 }
 
+.transition-opacity {
+  transition: opacity 1s;
+}
+
+.transition-visibility {
+  transition: visibility 1s;
+}
+
+.blur {
+  -webkit-filter: blur(5.5px);
+  filter: blur(5.5px);
+}
+
+
+/* SECTION - Keyframes */
+@keyframes slideIn {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
 /* SECTION - Media Queries */
-/* @media (prefers-reduced-motion) {
+@media (prefers-reduced-motion) {
   * {
     animation: none !important;
     transition: none !important;
   }
-}  */
+} 

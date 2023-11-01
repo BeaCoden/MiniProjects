@@ -11,6 +11,7 @@ module.exports = {
         colorNav: "rgb(131, 80, 111)", // #83506F
         bodyTransparent: "rgba(212, 178, 199, 0.8)", // #d4b2c7cc
         bodyLight: "rgb(196, 166, 184)", // #cfbec8
+        bodyGlass: "rgba(130, 79, 110, 0.53)", // #83506F59
         fontColor: "rgb(131, 80, 111)", // #83506F
         fontColorNav: "rgb(255, 255, 255)", // #FFFFFF
       },
@@ -22,5 +23,10 @@ module.exports = {
       },
     },
     plugins: [],
+  },
+  variants: {
+    extend: {
+      backdropBlur: ["responsive", "hover", "focus"],
+    },
   },
 };
