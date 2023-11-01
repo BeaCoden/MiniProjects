@@ -2,7 +2,6 @@
   <nav>
     <router-view />
   </nav>
-  <h2>hello</h2>
 </template>
 
 <style>
