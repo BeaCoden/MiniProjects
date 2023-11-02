@@ -24,9 +24,4 @@ module.exports = {
     },
     plugins: [],
   },
-  variants: {
-    extend: {
-      backdropBlur: ["responsive", "hover", "focus"],
-    },
-  },
 };

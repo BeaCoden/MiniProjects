@@ -34,32 +34,6 @@
   box-sizing: border-box;
 }
 
-.transition-opacity {
-  transition: opacity 1s;
-}
-
-.transition-visibility {
-  transition: visibility 1s;
-}
-
-.blur {
-  -webkit-filter: blur(5.5px);
-  filter: blur(5.5px);
-}
-
-
-/* SECTION - Keyframes */
-@keyframes slideIn {
-  from {
-    transform: translateY(-100%);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-
 /* SECTION - Media Queries */
 @media (prefers-reduced-motion) {
   * {
