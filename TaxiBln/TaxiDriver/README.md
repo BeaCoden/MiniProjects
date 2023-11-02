@@ -1,6 +1,6 @@
 # Taxi Billing
 
-![taxiBillIMG](https://github.com/BeaCoden/MiniProjects/assets/130828327/8e3de119-6a65-4992-bf4d-f0304c20d153)
+<img width="287" alt="S22+ display" src="https://github.com/BeaCoden/MiniProjects/assets/130828327/1a1c8ff8-44e9-4c28-890e-fec48d86915d">
 
 ## Web App for taxi driver billing
 
