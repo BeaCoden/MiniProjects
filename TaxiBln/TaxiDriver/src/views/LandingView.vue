@@ -17,15 +17,11 @@
       src="../assets/img/landingPageCar.png"
       alt="landingpage"
       class="h-screen w-screen object-cover"
-      :class="{ blur: isLandingBoxVisible }"
+      :class="{ 'blur-md': isLandingBoxVisible }"
     />
   </div>
 
-  <div
-    v-show="isLandingBoxVisible"
-    id="landingBox"
-    class="bg-bodyGlass rounded-xl shadow-lg pb-5 px-5 absolute w-3/4 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 animate-slideIn duration-1000"
-  >
+  <div v-if="isLandingBoxVisible" id="landingBox">
     <img src="../assets/img/landingPageText.png" alt="landingpage" />
     <h1
       class="font-bold text-xl text-primary px-3 italic opacity-100 text-shadow-primary"
@@ -33,12 +29,12 @@
       "Hallo Taxiheld...,
     </h1>
 
-    <p class="text-xs text-right text-primary px-3">
+    <p class="text-xs text-right text-primary px-3 py-5">
       mit dieser App verwaltest du deine Einnahmen und Ausgaben übersichtlich.
       Nutze Funktionen wie Foto-Upload für deine Coupons und Belege. Behalte
       einen klaren Finanzüberblick. Jetzt kostenlos registrieren & loslegen!"
     </p>
-    <br />
+
     <figcaption class="text-right text-xs text-primary pr-3">
       <cite title="Source Title">
         <a href="www.linkedin.com/in/beapitzschke">- Taxi Billing Team</a>
@@ -57,10 +53,39 @@ export default {
   mounted() {
     setTimeout(() => {
       this.isLandingBtnVisible = true;
-      setTimeout(() => {
-        this.isLandingBoxVisible = true;
-      }, 1000); // Sie können die Dauer auf Ihren Wunschwert setzen
-    }, 500); // Zeitverzögerung, um den Button zuerst anzuzeigen
+    }, 500);
+    setTimeout(() => {
+      this.isLandingBoxVisible = true;
+    }, 1500);
   },
 };
 </script>
+<style>
+#landingBox {
+  background-color: rgba(130, 79, 110, 0.53);
+  border-radius: 1rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  padding-bottom: 1.25rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  position: absolute;
+  width: 75%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: fadeIn 1s ease forwards;
+}
+
+/* Animations-Keyframes */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -60%); /* Startposition der Animation */
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+}
+</style>
