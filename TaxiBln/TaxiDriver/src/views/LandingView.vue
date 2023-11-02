@@ -5,6 +5,7 @@
     class="fixed top-5 left-3/4 z-50 text-sm"
   >
     <button
+      @click="gotoLogin"
       class="bg-primary text-fontColor font-semibold rounded hover:bg-secondary px-3 py-2"
     >
       weiter
@@ -49,6 +50,11 @@ export default {
       isLandingBoxVisible: false,
       isLandingBtnVisible: false,
     };
+  },
+  methods: {
+    gotoLogin() {
+      this.$router.push({ name: "login" });
+    },
   },
   mounted() {
     setTimeout(() => {
