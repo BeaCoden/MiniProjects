@@ -1,6 +1,6 @@
 <template>
   <div class="flex h-screen bg-white px-8">
-    <div class="w-full max-w-xs m-auto">
+    <div :class="{ 'blur-bg': showPopup }" class="w-full max-w-xs m-auto">
       <header>
         <!-- Logo -->
         <img
@@ -60,7 +60,7 @@
             ></i>
           </span>
         </div>
-        <div class="flex justify-between">
+        <div class="flex-col font-light">
           <a class="text-pink-700 hover:text-fontColor text-xs cursor-pointer"
             >Passwort vergessen?</a
           >
@@ -72,18 +72,11 @@
               id="rememberMe"
             />
             <span class="ml-2 text-pink-700 hover:text-fontColor text-xs">
-              merken
+              angemeldet bleiben
             </span>
             <span class="ml-1 info-icon" @click="togglePopup">
               <i class="fas fa-info-circle"></i>
             </span>
-            <div
-              v-if="showPopup"
-              class="popup text-xs bg-bodyTransparent p-2 rounded-sm"
-            >
-              Wenn Sie diese Option auswählen, bleiben Sie angemeldet. Sie
-              können sich jederzeit abmelden.
-            </div>
           </label>
         </div>
         <div class="flex justify-around w-full pt-7">
@@ -91,6 +84,27 @@
           <BtnLogIn />
         </div>
       </form>
+    </div>
+    <!-- Das Popup-Fenster für die Checkbox "merken" -->
+    <div
+      v-if="showPopup"
+      class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50"
+    >
+      <div class="bg-white p-5 rounded text-center">
+        <p class="mb-4 text-xs text-fontColor">
+          Wenn Sie diese Option auswählen,
+          <br />
+          bleiben Sie angemeldet.
+          <br />
+          Abmelden ist jederzeit möglich.
+        </p>
+        <button
+          @click="togglePopup"
+          class="bg-secondary hover:bg-primary duration-300 text-xs text-fontColorNav py-2 px-4 rounded"
+        >
+          Schließen
+        </button>
+      </div>
     </div>
   </div>
 </template>
@@ -116,7 +130,17 @@ export default {
     },
     togglePopup() {
       this.showPopup = !this.showPopup;
+      if (this.showPopup) {
+        document.body.style.overflow = "hidden";
+      } else {
+        document.body.style.overflow = "";
+      }
     },
   },
 };
 </script>
+<style scoped>
+.blur-bg {
+  filter: blur(5px);
+}
+</style>
