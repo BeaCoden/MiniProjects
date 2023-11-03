@@ -4,15 +4,15 @@
       <header>
         <!-- Logo -->
         <img
-          class="w-60 mx-auto mb-10"
+          class="w-60 mx-auto mb-10 animate__animated animate__fadeInDown"
           src="../assets/img/logoTextLogin.png"
           alt="Logo von Taxi Billing"
         />
       </header>
 
       <!-- Login-Formular -->
-      <form>
-        <div>
+      <form class="animate__animated animate__fadeInUp">
+        <div class="relative">
           <label
             id="userNameLabel"
             for="UserName"
@@ -38,6 +38,7 @@
             >Passwort</label
           >
           <input
+            :type="showPassword ? 'text' : 'password'"
             class="w-full p-2 mb-5 text-fontColor border-b-2 border-bodyColor bg-bodyTransparent outline-none focus:bg-gray-300"
             name="password"
             id="password"
@@ -51,6 +52,7 @@
           <span
             class="absolute pt-3 right-2 top-1/2 transform -translate-y-1/2 cursor-pointer text-sm z-10"
             aria-label="Passwort anzeigen/verbergen"
+            @click="toggleShowPassword"
           >
             <i
               class="eye-icon"
@@ -58,31 +60,63 @@
             ></i>
           </span>
         </div>
-        <a
-          class="text-pink-700 hover:text-fontColor text-xs self-end cursor-pointer"
-          >Passwort vergessen?</a
-        >
-        <div class="flex justify-between w-full pt-7">
-          <!-- Registrierung und Login-Buttons -->
-          <button
-            type="button"
-            class="bg-primary font-semibold text-bodyColor px-5 py-2 rounded-lg hover:bg-secondary focus:outline-none focus:ring-2 focus:ring-opacity-50"
+        <div class="flex justify-between">
+          <a class="text-pink-700 hover:text-fontColor text-xs cursor-pointer"
+            >Passwort vergessen?</a
           >
-            Registrieren
-          </button>
-
-          <button
-            type="submit"
-            class="bg-primary font-semibold text-bodyColor px-5 py-2 rounded-lg hover:bg-secondary focus:outline-none focus:ring-2 focus:ring-opacity-50"
-          >
-            Login
-          </button>
+          <label class="flex items-center">
+            <input
+              type="checkbox"
+              class="form-checkbox h-3 w-3"
+              name="rememberMe"
+              id="rememberMe"
+            />
+            <span class="ml-2 text-pink-700 hover:text-fontColor text-xs">
+              merken
+            </span>
+            <span class="ml-1 info-icon" @click="togglePopup">
+              <i class="fas fa-info-circle"></i>
+            </span>
+            <div
+              v-if="showPopup"
+              class="popup text-xs bg-bodyTransparent p-2 rounded-sm"
+            >
+              Wenn Sie diese Option auswählen, bleiben Sie angemeldet. Sie
+              können sich jederzeit abmelden.
+            </div>
+          </label>
+        </div>
+        <div class="flex justify-around w-full pt-7">
+          <BtnReg />
+          <BtnLogIn />
         </div>
       </form>
     </div>
   </div>
 </template>
 <script>
-export default {};
+import BtnReg from "../components/BtnReg.vue";
+import BtnLogIn from "../components/BtnLogIn.vue";
+
+export default {
+  name: "LoginView",
+  components: {
+    BtnReg,
+    BtnLogIn,
+  },
+  data() {
+    return {
+      showPassword: false,
+      showPopup: false,
+    };
+  },
+  methods: {
+    toggleShowPassword() {
+      this.showPassword = !this.showPassword;
+    },
+    togglePopup() {
+      this.showPopup = !this.showPopup;
+    },
+  },
+};
 </script>
-<style></style>
